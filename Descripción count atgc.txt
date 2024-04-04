@@ -1,0 +1,4 @@
+nombre del programa: Count A,T,G,C
+
+descripción: Cuenta las ocurrencias de los simbolos A,T,G, Y C de una cadena que se lee a traves de un archivo
+ 
