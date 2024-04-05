@@ -30,7 +30,7 @@ El símbolo C aparece 4 veces en la cadena.
 
 - Descripción: Verificar que el script no reconoce otras letras ademas de las ya especificadas.
 - Datos de entrada: EEEEFFFFNNNNNOOOO
-- Resultado esperado: Los simbolos eesperados no aparecen 0 veces en la cadena
+- Resultado esperado: Los simbolos eesperados aparecen 0 veces en la cadena
 - Estado:
 ```
 El símbolo A aparece 0 veces en la cadena.
