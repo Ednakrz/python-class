@@ -13,21 +13,24 @@ El estar contando de manera manual la aparicion de diferentes nucleotidos como A
 
 Requisitos funcionales
 
-- Leer números de un archivo dado, tanto en formato de número entero como decimal.
-- Calcular la suma de todos los números leídos del archivo.
-- Describe lo que el sistema debe de hacer:flujo de trabajo,entradas, salidas,exepciones.
+- Leer diferentes letras (A,T,G,C)de un archivo dado.
+- Convierte las letras minusculas a mayusculas. 
+- Calcular la aparición de cada tipo de letra leída del archivo.
 
 
 Requisitos no funcionales
-
-- Tiempo de respuesta,capacaidad de almacenamiento,seguridad o algunas especificaciones del lenguaje de programacion, plataforma tecnologica.
+- El script deberá estar escrito en Python.
+- El tiempo de respuesta debe ser rápido, incluso con archivos de gran tamaño.
 
 
 ## Análisis y Diseño
 
-Pequeña descripcion de la metodoliga para la resolucion del problema (super super pequeña). 
+Para resolver este problema, se utilizarán varias funciones incorporadas en Python, así como el manejo de excepciones para la validación de datos y archivo. A continuación, se muestra un pseudocódigo simple para ilustrar la lógica básica del script:
+ 
 
 pseudocogido simple que ilustre la logica basica del script:
+
+
 ```
 ```
 
