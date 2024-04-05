@@ -1,40 +1,33 @@
-# Nombre del Programa 
-Hola:) esto es para probar el github desktop pero lo puedes borrar ahora lo estoy editando desde el remoto (internet) pero igual se puede borrar, yeeei si bajó al local, ahora estoy editandod desde desktop 
-<!-- PRIMER MODIFICACION EN GITHUB, ESTOY EDITANDO ESTO PERO ESTO ES UN TEMPLATE -->
+# Contador ATGC
 
-Este es un script de Python diseñado para ----------- 
+Este es un script de Python diseñado para contar el numero de apariciónes que existen de las letras 'A,T,G,C' en un archivo .txt.
 
 ## Uso
-
+El script acepta un solo argumento, el nombre del archivo a leer:
 ```
-python nombre_programa
+python archivo.txt
 ```
-
+Donde `[archivo]` es el nombre del archivo que contiene las letras a sumar.
 ## Salida
 
-El script imprimirá --------- en la consola. 
+El script imprimirá la cantidad de pariciones que contó de las 4 letras por separado.
 
 ## Control de errores
 
-Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son ---------, el script generará un error.
+El codigo por el momento no tien un control de errores, sin embargo se está trabajando en ello, si tiene alguna sugerencia se agradece su comentario a traves del correo de comunicación proporsionado en la parte de abajo. 
 
 ## Pruebas
 
-El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas con:
-
-```
-```
+El script no incluye un conjunto de pruebas unitarias.
 
 ## Datos
-
+El script está diseñado para operar en archivos de texto plano. No hay restricciones en el número de líneas en el archivo.
 
 ## Metadatos y documentación
-
+Este README ofrece información de uso básico. Para obtener información más detallada sobre el diseño y la implementación del script, consulte [Enlace a la documentación].
 
 ## Código fuente
-
-```
-```
+El código fuente está disponible en este repositorio. Se acoge con satisfacción cualquier contribución o sugerencia a través de solicitudes pull request.
 
 ## Términos de uso
 
@@ -46,4 +39,4 @@ Si utiliza este script en su trabajo, por favor cite: [información de citación
 
 ## Contáctenos
 
-Si tiene problemas o preguntas, por favor abra un problema en este repositorio o póngase en contacto con nosotros en: [información de contacto].
+Si tiene problemas o preguntas, por favor abra un problema en este repositorio o póngase en contacto con nosotros en: [ednakrz@lcg.unam.mx].
