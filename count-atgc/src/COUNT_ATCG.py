@@ -9,7 +9,7 @@ AUTHOR
  Edna Karen Rivera Zagal  
 
 DESCRIPTION
-   Este progrma suma la cantidad de pariciones de una letra (A,T,G,C) en un archivo .txt.     
+   Este progrma suma la cantidad de apariciones de una letra (A,T,G,C) en un archivo .txt.     
 
 CATEGORY
     Contador.    
