@@ -30,11 +30,23 @@ Para resolver este problema, se utilizarán varias funciones incorporadas en Pyt
 
 pseudocogido simple que ilustre la logica basica del script:
 
-
 ```
-```
+#Itroducir el archivo donde se encuentra la cadena
+with open('archivo.txt', 'r') as file:
 
-El formato de los datos de entrada.
+for in archivo.file
+ for letra in cadena:
+    if letra == 'A':
+        count_A += 1
+    elif letra == 'T':
+        count_T += 1
+    elif letra == 'G':
+        count_G += 1
+    elif letra == 'C':
+        count_C += 1
+print "La cantidad de veces que apareció A fue:{count_A}"
+```
+El formato de los datos de entrada será un archivo de tipo txt.
 
 #### Caso de uso:
 
@@ -46,17 +58,21 @@ El formato de los datos de entrada.
                  | 1. Proporciona archivo de entrada
                  v
          +-----------------+
-         |                 |
-         | Lo que se hace  |
-         |                 |
-         |                 |
+         | suma las canti  |
+         | dades de veces  |
+         | que encuentra   |
+	 |una letra,la alma|
+	 |cena y la imprime|
          +-----------------+
 ```
 
-- **Actor**: quien ejecuta el programa
-- **Descripción**: El actor proporciona un archivo de entrada-Que hace el programa
+- **Actor**: Usuario
+- **Descripción**: El actor proporciona un archivo de entrada con de formato FASTA. El sistema valida el archivo y los datos de entrada, calcula la suma de las letras y muestra el resultado.
 - **Flujo principal**:
-
+ 	1. El actor inicia el sistema proporcionando el archivo de entrada con las letras a sumar.
+	2. El sistema valida el archivo y los datos de entrada.
+	3. El sistema calcula la suma de la aparición de las letras.
+	4. El sistema muestra el resultado.
 	
 - **Flujos alternativos**:
-	- Casos especiales en el programa
+	- Si los datos de entrada del archivo, en este caso las letras se encuentran en minusculas el progrmas las pasa a 	mayusculas.
