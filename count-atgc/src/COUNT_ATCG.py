@@ -31,44 +31,34 @@ SEE ALSO
         
 '''
 
+# Inicializar contadores para cada símbolo
+count_A = 0
+count_T = 0
+count_G = 0
+count_C = 0
 
-# ===========================================================================
-# =                            imports
-# ===========================================================================
+# Abrir el archivo en modo lectura
+with open('archivo.txt', 'r') as file:
+    # Leer la cadena del archivo y convertirla a mayúsculas
+    cadena = file.read().upper()
 
+# Contar las ocurrencias de cada símbolo en la cadena
+for letra in cadena:
+    if letra == 'A':
+        count_A += 1
+    elif letra == 'T':
+        count_T += 1
+    elif letra == 'G':
+        count_G += 1
+    elif letra == 'C':
+        count_C += 1
 
-
-
-
-# ===========================================================================
-# =                            Command Line Options
-# ===========================================================================
-
-
-
-
-
-
-# ===========================================================================
-# =                            functions
-# ===========================================================================
-
-
-
-
-
-# ===========================================================================
-# =                            main
-# ===========================================================================
-
-
-# step 1.
-
-
-# step 2.
-
-
-# step 3.
+# Imprimir el resultado
+print(f'El símbolo A aparece p veces en la cadena.')
+print(f'El símbolo T aparece {count_T} veces en la cadena.')
+print(f'El símbolo G aparece {count_G} veces en la cadena.')
+print(f'El símbolo C aparece {count_C} veces en la cadena.')
+''' 
 
 
 
