@@ -1,22 +1,22 @@
 '''
 NAME
-       
+Contador de ATGC    
 
 VERSION
-        
+  1.0      
 
 AUTHOR
-        
+ Edna Karen Rivera Zagal  
 
 DESCRIPTION
-        
+   Este progrma suma la cantidad de pariciones de una letra (A,T,G,C) en un archivo .txt.     
 
 CATEGORY
-        
+    Contador.    
 
 USAGE
 
-    % python programName
+    % python archivo.txt
     
 
 ARGUMENTS
