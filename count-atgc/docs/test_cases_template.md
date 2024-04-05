@@ -19,12 +19,12 @@ A continuación, presentamos los detalles de los casos de prueba. Cada caso de p
 - Datos de entrada: AAAATTTTGGGGCCCC
 - Resultado esperado: A=4,T=4,G=4,C=4
 - Estado:
-´´´
+```
 El símbolo A aparece 4 veces en la cadena.
 El símbolo T aparece 4 veces en la cadena.
 El símbolo G aparece 4 veces en la cadena.
 El símbolo C aparece 4 veces en la cadena.
-´´´
+```
 
 ### Caso de prueba 2: Comprobación de error sin una letra.
 
@@ -32,9 +32,9 @@ El símbolo C aparece 4 veces en la cadena.
 - Datos de entrada: EEEEFFFFNNNNNOOOO
 - Resultado esperado: Los simbolos eesperados no aparecen 0 veces en la cadena
 - Estado:
-´´´
+```
 El símbolo A aparece 0 veces en la cadena.
 El símbolo T aparece 0 veces en la cadena.
 El símbolo G aparece 0 veces en la cadena.
 El símbolo C aparece 0 veces en la cadena.
-´´´
+```
