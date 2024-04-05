@@ -1,18 +1,20 @@
-# Titulo del archivo
+# **Contador de ATCG**
 
-Fecha:
+Fecha: 02/04/2024
 
-**Participantes / Autor**:
+**Participantes / Autor**: Edna Karen Rivera Zagal 
 
-- Nombre  <correo>
+- Edna Rivera <ednakrz@lcg.unam.mx>
 
 ## Descripción del Problema
-
+El estar contando de manera manual la aparicion de diferentes nucleotidos como A,T,G y C es un inconveniente cuando hablamos de secuencias muy largas que inclusive pueden llegar a ser de algunas Kb de extensión, ya que al ser tantas se deja mucho espacio para el factor error humano.  
 
 ## Especificación de Requisitos
 
 Requisitos funcionales
 
+- Leer números de un archivo dado, tanto en formato de número entero como decimal.
+- Calcular la suma de todos los números leídos del archivo.
 - Describe lo que el sistema debe de hacer:flujo de trabajo,entradas, salidas,exepciones.
 
 
