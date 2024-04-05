@@ -17,19 +17,7 @@ CATEGORY
 USAGE
 
     % python archivo.txt
-    
-
-ARGUMENTS
-
-
-METHOD
-
-
-SEE ALSO
-
-
-        
-'''
+```
 
 # Inicializar contadores para cada símbolo
 count_A = 0
@@ -58,7 +46,7 @@ print(f'El símbolo A aparece p veces en la cadena.')
 print(f'El símbolo T aparece {count_T} veces en la cadena.')
 print(f'El símbolo G aparece {count_G} veces en la cadena.')
 print(f'El símbolo C aparece {count_C} veces en la cadena.')
-''' 
+```
 
 
 
