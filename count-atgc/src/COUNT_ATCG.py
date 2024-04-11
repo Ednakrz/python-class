@@ -6,17 +6,24 @@ VERSION
   1.0      
 
 AUTHOR
- Edna Karen Rivera Zagal  
+ Edna Karen Rivera Zagal
+
+ SYNOPSIS
+    python3 count_atgc -inputfile <file> 
 
 DESCRIPTION
-   Este progrma suma la cantidad de apariciones de una letra (A,T,G,C) en un archivo .txt.     
+   Este progrma suma la cantidad de apariciones de una letra (A,T,G,C) de un archivo .txt.     
 
 CATEGORY
-    Contador.    
+    Contador.
 
-USAGE
-
-    % python archivo.txt
+OPCIONES 
+    inputfile 
+      Path del archivo que contenga la secuencia de nucelótidos 
+        ejemplo: archivo.txt
+USAGE 
+Forma en la que se puede ejecutar el programa: 
+  ejemplo: % python archivo.txt
 '''
 
 # Inicializar contadores para cada símbolo
