@@ -6,7 +6,7 @@ VERSION
   1.0      
 
 AUTHOR
- Edna Karen Rivera Zagal
+ Edna Karen Rivera Zagal <ednakrz@lcg.unam.mx>
 
  SYNOPSIS
     python3 count_atgc -inputfile <file> 
@@ -24,6 +24,10 @@ OPCIONES
 USAGE 
 Forma en la que se puede ejecutar el programa: 
   ejemplo: % python archivo.txt
+
+Ejemplo
+  Linea de comando usada para el ejemplo: 
+  python COUNT_ATCG.py dna_sequence.txt
 '''
 
 # Inicializar contadores para cada símbolo
