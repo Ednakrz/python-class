@@ -92,5 +92,6 @@ El formato de los datos de entrada será un archivo de tipo txt.
   	- 2.2 El sistema pregunta si queremos contar una letra en específico.
   	- 2.3 si el argumento ingresado es [s], el programa solo cuenta la 		aparicion 	de la letra introducida por el usuario.
 	- 2.4 Si el argumento ingresado es [n o enter ], el programa por defult 		cuenta las apariciones de todas las letras (A,T,G,C).
+   	- 2.4 El programa muestra el resultado.
 - **Flujos alternativos**:
 	- Si los datos de entrada del archivo, en este caso las letras se encuentran en minusculas el programa las pasa a 	mayusculas.
