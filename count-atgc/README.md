@@ -14,7 +14,10 @@ El script imprimirá la cantidad de pariciones que contó de las 4 letras por se
 
 ## Control de errores
 
-El codigo por el momento no tien un control de errores, sin embargo se está trabajando en ello, si tiene alguna sugerencia se agradece su comentario a traves del correo de comunicación proporsionado en la parte de abajo. 
+Este código se centra en la rebición errores de dos tipos principalmente.
+
+1. FileNotFoundError: Este error se maneja cuando el archivo especificado por el usuario no se puede encontrar o no existe en el sistema. En este caso, el programa imprimirá un mensaje de error indicando que no se pudo encontrar el archivo.
+2. Excepciones genéricas: Se utiliza un bloque 'except' genérico para manejar cualquier otra excepción inesperada que pueda ocurrir durante la ejecución del programa. 
 
 ## Pruebas
 
