@@ -83,14 +83,14 @@ El formato de los datos de entrada será un archivo de tipo txt.
 - Para el segundo argumento [s] el programa pregunta si queremos especificar que letra contar, si introducimos el argumento [s], el programa valida los datos y cuenta la apricion de la letra deseada, si el argumento introducido es [n o enter] el archivo cuenta las letras indicadas en el programa por defult.
 - 
 - **Flujo principal**:
- 	1.1 El actor inicia el sistema proporcionando el archivo de entrada con 	las 	letras a sumar.
-	1.2 El sistema valida el archivo y los datos de entrada.
-  	1.3 El sistema calcula la suma de apariciones de las letras.
-  	1.4 El sistema muestra el resultado.
+ 	- 1.1 El actor inicia el sistema proporcionando el archivo de entrada con 	las 	letras a sumar.
+	-1.2 El sistema valida el archivo y los datos de entrada.
+  	-1.3 El sistema calcula la suma de apariciones de las letras.
+  	-1.4 El sistema muestra el resultado.
 
-  	2.1El actor inicia el sistema proporcionando el archivo de entrada con 		las 	letras a sumar.
-  	2.2 El sistema pregunta si queremos contar una letra en específico.
-  	2.3 si el argumento ingresado es [s], el programa solo cuenta la aparicion 	de la letra introducida por el usuario.
-	2.4 Si el argumento ingresado es [n o enter ], el programa por defult 		cuenta las apariciones de todas las letras (A,T,G,C).
+  	-2.1El actor inicia el sistema proporcionando el archivo de entrada con 		las 	letras a sumar.
+  	-2.2 El sistema pregunta si queremos contar una letra en específico.
+  	-2.3 si el argumento ingresado es [s], el programa solo cuenta la 		aparicion 	de la letra introducida por el usuario.
+	-2.4 Si el argumento ingresado es [n o enter ], el programa por defult 		cuenta las apariciones de todas las letras (A,T,G,C).
 - **Flujos alternativos**:
 	- Si los datos de entrada del archivo, en este caso las letras se encuentran en minusculas el programa las pasa a 	mayusculas.
