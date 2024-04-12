@@ -3,14 +3,17 @@
 Este es un script de Python diseñado para contar el numero de apariciónes que existen de las letras 'A,T,G,C' en un archivo .txt.
 
 ## Uso
-El script acepta un solo argumento, el nombre del archivo a leer:
+El script acepta dos argumentos, el nombre del archivo a leer:
 ```
 python archivo.txt
 ```
 Donde `[archivo]` es el nombre del archivo que contiene las letras a sumar.
+
+Y las letras específicas ha contar. 
+
 ## Salida
 
-El script imprimirá la cantidad de pariciones que contó de las 4 letras por separado.
+El script imprimirá la cantidad de pariciones que contó de las 4 letras por separado o imprimirá la aparición de la letra especificada por el usuario.
 
 ## Control de errores
 
