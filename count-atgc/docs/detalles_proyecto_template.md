@@ -16,6 +16,7 @@ Requisitos funcionales
 - Leer diferentes letras (A,T,G,C)de un archivo dado.
 - Convierte las letras minusculas a mayusculas. 
 - Calcular la aparición de cada tipo de letra leída del archivo.
+- Poporionar un archivo de texto plano. 
 
 
 Requisitos no funcionales
@@ -28,7 +29,7 @@ Requisitos no funcionales
 Para resolver este problema, se utilizarán varias funciones incorporadas en Python, así como el manejo de excepciones para la validación de datos y archivo. A continuación, se muestra un pseudocódigo simple para ilustrar la lógica básica del script:
  
 
-pseudocogido simple que ilustre la logica basica del script:
+pseudocogido:
 
 ```
 #Itroducir el archivo donde se encuentra la cadena
@@ -67,11 +68,11 @@ El formato de los datos de entrada será un archivo de tipo txt.
 ```
 
 - **Actor**: Usuario
-- **Descripción**: El actor proporciona un archivo de entrada con de formato FASTA. El sistema valida el archivo y los datos de entrada, calcula la suma de las letras y muestra el resultado.
+- **Descripción**: El actor proporciona un archivo de entrada de texto plano con formato FASTA. El sistema valida el archivo y los datos de entrada, calcula la suma de las letras y muestra el resultado.
 - **Flujo principal**:
- 	1. El actor inicia el sistema proporcionando el archivo de entrada con las letras a sumar.
+ 	1. El actor inicia el sistema proporcionando el archivo de entrada con las 	letras a sumar.
 	2. El sistema valida el archivo y los datos de entrada.
-	3. El sistema calcula la suma de la aparición de las letras.
+	3. El sistema calcula la suma de apariciones de las letras.
 	4. El sistema muestra el resultado.
 	
 - **Flujos alternativos**:
