@@ -30,11 +30,60 @@ El símbolo C aparece 4 veces en la cadena.
 
 - Descripción: Verificar que el script no reconoce otras letras ademas de las ya especificadas.
 - Datos de entrada: EEEEFFFFNNNNNOOOO
-- Resultado esperado: Los simbolos eesperados aparecen 0 veces en la cadena
+- Resultado esperado: Los simbolos esperados aparecen 0 veces en la cadena
 - Estado:
 ```
 El símbolo A aparece 0 veces en la cadena.
 El símbolo T aparece 0 veces en la cadena.
 El símbolo G aparece 0 veces en la cadena.
 El símbolo C aparece 0 veces en la cadena.
+```
+### Caso de prueba 3: Introducir una letra específica.
+- Descripción: Verificar que el script reconoce las letras especificadas por el 
+ usuario.
+- Datos de entrada: A G
+- Resultado esperado: Las letras especificadas aparecen 4 veces cada una. 
+
+Código de entrada:
+```
+python COUNT_ATGC.py .\PRUEBA.txt
+¿Desea ingresar letras específicas? (s/n): S
+Ingrese las letras separadas por espacios: A G
+```
+Resultado: 
+```
+El símbolo A aparece 4 veces en la cadena.
+El símbolo G aparece 4 veces en la cadena.
+```
+### Caso de prueba 4: Comprobar que el programa no acepta letras no especificadas en el código (A,T,G,C) introducidas por el usuario.
+- Descripción: Verificar que el script no reconoce las letras especificadas por el 
+ usuario que no sean las declaradas en el código.
+- Datos de entrada: E F
+- Resultado esperado: El programa no regresa ningun resultado. 
+
+Código de entrada:
+```
+python COUNT_ATGC.py .\PRUEBA.txt
+¿Desea ingresar letras específicas? (s/n): S
+Ingrese las letras separadas por espacios: E F
+```
+Resultado: 
+```
+```
+### Caso de prueba 4: Comprobar que el programa lee las letras especificadas en el código (A,T,G,C) introducidas por el usuario, aun con letras que no están especificadas en el programa.
+- Descripción: Verificar que el script  reconoce las letras especificadas por el 
+ usuario aun con letras que no sean las declaradas en el código.
+- Datos de entrada: A E G
+- Resultado esperado: Las letras especificadas aparecen 4 veces cada una.  
+
+Código de entrada:
+```
+python COUNT_ATGC.py .\PRUEBA.txt
+¿Desea ingresar letras específicas? (s/n): S
+Ingrese las letras separadas por espacios: A E G
+```
+Resultado: 
+```
+El símbolo A aparece 4 veces en la cadena.
+El símbolo G aparece 4 veces en la cadena.
 ```
