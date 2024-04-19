@@ -1,6 +1,6 @@
 # **Contador de ATCG**
 
-Fecha: 011/04/2024
+Fecha: 19/04/2024
 
 **Participantes / Autor**: Edna Karen Rivera Zagal 
 
