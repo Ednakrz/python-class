@@ -33,7 +33,7 @@ Ejemplo
   ¿Desea ingresar letras específicas? (s/n): s
   Ingrese las letras separadas por espacios: A G
 '''
-import sys
+import sys, os 
 
 # Verificar si se proporcionó el nombre del archivo como argumento
 if len(sys.argv) < 2:
@@ -58,6 +58,9 @@ if input("¿Desea ingresar letras específicas? (s/n): ").lower() == 's':
     specific_letters = letters_input.split()
 
 try:
+    tamaño_archivo = os.path.getsize(nombre_archivo)
+    if tamaño_archivo == 0: 
+        raise ValueError("sorry, the file is empty.")
     # Abrir el archivo en modo lectura
     with open(nombre_archivo, 'r') as file:
         # Leer la cadena del archivo y convertirla a mayúsculas
@@ -92,10 +95,9 @@ try:
         print(f'El símbolo C aparece {count_C} veces en la cadena.')
 
 except FileNotFoundError:
-    print(f"Error: No se pudo encontrar el archivo '{nombre_archivo}'.")
+    print(f"Sorry, couldn't find the file'{nombre_archivo}'.")
 
-except Exception as e:
-    print("Error inesperado:", e)
+
 # ESPERO QUE SE GUARDE PLIS :,) 
 
 
