@@ -33,7 +33,7 @@ Ejemplo
   ¿Desea ingresar letras específicas? (s/n): s
   Ingrese las letras separadas por espacios: A G
 '''
-import sys, os 
+import sys, os
 
 # Verificar si se proporcionó el nombre del archivo como argumento
 if len(sys.argv) < 2:
@@ -61,6 +61,8 @@ specific_letters = []
 if input("¿Desea ingresar letras específicas? (s/n): ").lower() == 's':
     letters_input = input("Ingrese las letras separadas por espacios: ")
     specific_letters = letters_input.split()
+    if not all(c in 'ATCG' for c in specific_letters):
+            raise ValueError("There are invalid character")
 
 try:
      # Abrir el archivo en modo lectura
