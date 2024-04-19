@@ -43,6 +43,11 @@ if len(sys.argv) < 2:
 # Obtener el nombre del archivo de los argumentos de la línea de comandos
 nombre_archivo = sys.argv[1]
 
+#Verificar que el archivo no este vacio
+tamaño_archivo = os.path.getsize(nombre_archivo)
+if tamaño_archivo == 0: 
+    raise ValueError("sorry, the file is empty.")
+   
 # Inicializar contadores para cada símbolo
 count_A = 0
 count_T = 0
@@ -58,13 +63,13 @@ if input("¿Desea ingresar letras específicas? (s/n): ").lower() == 's':
     specific_letters = letters_input.split()
 
 try:
-    tamaño_archivo = os.path.getsize(nombre_archivo)
-    if tamaño_archivo == 0: 
-        raise ValueError("sorry, the file is empty.")
-    # Abrir el archivo en modo lectura
+     # Abrir el archivo en modo lectura
     with open(nombre_archivo, 'r') as file:
         # Leer la cadena del archivo y convertirla a mayúsculas
         cadena = file.read().upper()
+        if not all(c in 'ATCG' for c in cadena):
+            raise ValueError("Sequence contains invalid character")
+
 
     # Contar las ocurrencias de cada símbolo en la cadena
     for letra in cadena:
