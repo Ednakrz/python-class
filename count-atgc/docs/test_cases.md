@@ -74,7 +74,7 @@ Resultado:
 ```
 ValueError: There are invalid character
 ```
-### Caso de prueba 4: Comprobar que el programa no lee las letras especificadas en el código (A,T,G,C) introducidas por el usuario, con letras que no están especificadas en el programa.
+### Caso de prueba 5: Comprobar que el programa no lee las letras especificadas en el código (A,T,G,C) introducidas por el usuario, con letras que no están especificadas en el programa.
 - Descripción: Verificar que el script no reconoce las letras especificadas por el 
  usuario con letras que no sean las declaradas en el código.
 - Datos de entrada: A E G
@@ -90,7 +90,7 @@ Resultado:
 ```
 ValueError: There are invalid character
 ```
-### Caso de prueba 5: Comprobar que el script acepta los caracteres válidos (ATGC) en minusculas. 
+### Caso de prueba 6: Comprobar que el script acepta los caracteres válidos (ATGC) en minusculas. 
 - Descripción: Verificar que el script reconoce las letras especificadas, ya sea que estén en el archivo .txt en minusculas.
 - Datos de entrada: atcg
 - Resultado esperado: contará los caracteres de la cadena.
@@ -108,7 +108,7 @@ El símbolo G aparece 1 veces en la cadena.
 El símbolo C aparece 1 veces en la cadena.
 ```
 
-### Caso de prueba 6: Comprobar que el script acepta los caracteres válidos (ATGC) en mayusculas. 
+### Caso de prueba 7: Comprobar que el script acepta los caracteres válidos (ATGC) en mayusculas. 
 - Descripción: Verificar que el script reconoce las letras especificadas, ya sea que estén en el archivo .txt en mayusculas.
 - Datos de entrada: ATGC
 - Resultado esperado: contará los caracteres de la cadena.
@@ -125,7 +125,7 @@ El símbolo T aparece 1 veces en la cadena.
 El símbolo G aparece 1 veces en la cadena.
 El símbolo C aparece 1 veces en la cadena.
 ```
-### Caso de prueba 7: Comprobar que el script devuelve un mensaje de error en caso de que se introduzca un archivo vacio.
+### Caso de prueba 8: Comprobar que el script devuelve un mensaje de error en caso de que se introduzca un archivo vacio.
 - Descripción: Verificar que el script devuelve un mensaje de error en caso de que se introduzca un archivo vacio.
 - Datos de entrada: 
 - Resultado esperado: "sorry, the file is empty.".
@@ -138,7 +138,7 @@ Resultado:
 ```
 ValueError: sorry, the file is empty.
 ```
-### Caso de prueba 8: Comprobar que el script devuelve un mensaje de error en caso de que no se encuentre el archivo.
+### Caso de prueba 9: Comprobar que el script devuelve un mensaje de error en caso de que no se encuentre el archivo.
 - Descripción: Verificar que el script devuelve un mensaje de error en caso de que no se encuentre el archivo en la memoria.si es en la memoria ? o es en la terminal? me puedes corregir porfis:).
 - Datos de entrada: hola.txt
 - Resultado esperado: "Sorry, couldn't find the file.".
