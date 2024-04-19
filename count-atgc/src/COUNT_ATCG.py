@@ -3,7 +3,7 @@ NAME
 Contador de ATGC    
 
 VERSION
-  1.2     
+  1.3    
 
 AUTHOR
  Edna Karen Rivera Zagal <ednakrz@lcg.unam.mx>
