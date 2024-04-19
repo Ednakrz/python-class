@@ -96,6 +96,6 @@ except FileNotFoundError:
 
 except Exception as e:
     print("Error inesperado:", e)
-
+# ESPERO QUE SE GUARDE PLIS :,) 
 
 
