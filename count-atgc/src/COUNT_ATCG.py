@@ -61,6 +61,7 @@ specific_letters = []
 if input("¿Desea ingresar letras específicas? (s/n): ").lower() == 's':
     letters_input = input("Ingrese las letras separadas por espacios: ")
     specific_letters = letters_input.split()
+    # Manda error si los caracteres introducidos por el usuario no son validos
     if not all(c in 'ATCG' for c in specific_letters):
             raise ValueError("There are invalid character")
 
@@ -105,6 +106,5 @@ except FileNotFoundError:
     print(f"Sorry, couldn't find the file'{nombre_archivo}'.")
 
 
-# ESPERO QUE SE GUARDE PLIS :,) 
 
 
