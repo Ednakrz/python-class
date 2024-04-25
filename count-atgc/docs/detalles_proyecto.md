@@ -1,6 +1,6 @@
 # **Contador de ATCG**
 
-Fecha: 011/04/2024
+Fecha: 19/04/2024
 
 **Participantes / Autor**: Edna Karen Rivera Zagal 
 
@@ -95,3 +95,9 @@ El formato de los datos de entrada será un archivo de tipo txt.
    	- 2.4 El programa muestra el resultado.
 - **Flujos alternativos**:
 	- Si los datos de entrada del archivo, en este caso las letras se encuentran en minusculas el programa las pasa a 	mayusculas.
+
+- **Validaciones del programa**:
+  	- Si el archivo está vacio se manda un mensaje de error de que el archivo está vacio y por lo tanto no se puede procesar.
+  	- Si no se encontró el archivo proporcionado por el usuario el programa mando un mensaje de error de que el archivo no fue encontrado.
+  	- Al programa solo acepta cadenas que contengas las letras, A,T,G,C ya sea que esten en mayusculas o minusculas, de no encontrarse el programa mando un mensaje de error en el que se afirma que la secuencia contiene caracteres invalidos.
+  	- El programa solo acepta como argumentos las letras 'A','T','G','C', en caso de introducir caracteres diferentes, el programa devuelve un mensaje de error aclarando que los caracteres son invalidos. 
