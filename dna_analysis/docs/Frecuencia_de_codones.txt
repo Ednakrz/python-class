@@ -1,0 +1,93 @@
+Frecuencia de codones 
+Fecha: 15/05/2024
+
+Participantes / Autor: Edna Karen Rivera Zagal
+
+Edna Rivera ednakrz@lcg.unam.mx
+Descripción del Problema
+El estar contando de manera manual la aparicion de codones dentro de una cadena de DNA es un inconveniente cuando hablamos de secuencias muy largas que inclusive pueden llegar a ser de algunas Kb de extensión, ya que al ser tantas se deja mucho espacio para el factor error humano.
+
+Especificación de Requisitos
+Requisitos funcionales
+
+Leer diferentes letras (A,T,G,C)de un archivo dado.
+Calcular la frecuencia en la que aparece un codon dentro de la secuencia prooporconada por el usuario.
+Poporionar un archivo de texto plano.
+Requisitos no funcionales
+
+El script deberá estar escrito en Python.
+El tiempo de respuesta debe ser rápido, incluso con archivos de gran tamaño.
+Análisis y Diseño
+Para resolver este problema, se utilizarán varias funciones incorporadas en Python, así como el manejo de excepciones para la validación de datos y archivo. A continuación, se muestra un pseudocódigo simple para ilustrar la lógica básica del script:
+
+pseudocogido:
+
+#Itroducir el archivo donde se encuentra la cadena
+def main():
+    parser = argparse.ArgumentParser(description="Calcula la frecuencia de codones en una secuencia de ADN.")
+    parser.add_argument("file", type=str, help="Archivo de ADN del cual leer la secuencia.")
+    parser.add_argument("-n", "--normalize", action="store_true", help="Normaliza el contenido de AT excluyendo 'N's del cálculo.")
+
+    args = parser.parse_args()
+    file_path = args.file
+    normalize = args.normalize
+
+    try:
+        # Leer la secuencia del archivo especificado utilizando la función proporcionada por file_io.py
+        sequence = read_dna_sequence(file_path)
+        
+        # Calcular el contenido de AT de la secuencia utilizando la función proporcionada por at_content.py
+        frecuencia = count_codons(sequence)
+        
+        # Mostrar el resultado al usuario
+        print(f"La frecuencia de codones en la secuencia es: {frecuencia}")
+    except Exception as e:
+        print(f"Error: {str(e)}")
+
+El formato de los datos de entrada será un archivo de tipo txt.
+
+except FileNotFoundError:
+    print(f"Error: No se pudo encontrar el archivo '{nombre_archivo}'.")
+
+except Exception as e:
+    print("Error inesperado:", e)
+El formato de los datos de entrada será un archivo de tipo txt.
+
+Caso de uso:
+         +---------------+
+         |   Usuario     |
+         +-------+-------+
+                 |
+                 | 1. Proporciona archivo de entrada
+                 v
+         +------------------+
+         | suma la canti    |
+         | dade de veces    |
+         | que encuentra    |
+	 |una codon, la alma|
+	 |cena y la imprime |
+         +------------------+
+Actor: Usuario
+
+Descripción: El actor proporciona un archivo de entrada de texto plano con formato FASTA. El sistema valida el archivo y los datos de entrada, calcula la cantidad de veces que se encontró un codon en específico y muestra el resultado.
+
+Flujo principal:
+
+1.1 El actor inicia el sistema proporcionando el archivo de entrada con las letras a sumar.
+
+1.2 El sistema valida el archivo y los datos de entrada.
+
+1.3 El sistema calcula la aparición de los codones.
+
+1.4 El sistema muestra el resultado.
+
+
+Flujos alternativos:
+
+Si los datos de entrada del archivo, en este caso las letras se encuentran en minusculas el programa las pasa a mayusculas.
+Validaciones del programa:
+
+Si el archivo está vacio se manda un mensaje de error de que el archivo está vacio y por lo tanto no se puede procesar.
+Si no se encontró el archivo proporcionado por el usuario el programa mando un mensaje de error de que el archivo no fue encontrado.
+Al programa solo acepta cadenas que contengas las letras, A,T,G,C ya sea que esten en mayusculas o minusculas, de no encontrarse el programa mando un mensaje de error en el que se afirma que la secuencia contiene caracteres invalidos.
+El programa solo acepta como argumentos las letras 'A','T','G','C', en caso de introducir caracteres diferentes, el programa devuelve un mensaje de error aclarando que los caracteres son invalidos.
