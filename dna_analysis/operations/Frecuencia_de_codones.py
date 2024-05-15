@@ -1,0 +1,15 @@
+def count_codons(dna_sequence):
+    codon_freq = {}
+    for i in range(0, len(dna_sequence), 3):
+        codon = dna_sequence[i:i+3]
+        if len(codon) == 3:
+            if codon in codon_freq:
+                codon_freq[codon] += 1
+            else:
+                codon_freq[codon] = 1
+    return codon_freq
+
+dna_sequence = "ATGCGAATTCGATCGATCGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG"
+
+frecuencia_de_codones = count_codons(dna_sequence)
+print (frecuencia_de_codones)
