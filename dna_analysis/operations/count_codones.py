@@ -15,13 +15,10 @@ def count_codons(dna_sequence):
 
     Args:
         dna_sequence (str): La secuencia de ADN a analizar.
-        normalize (bool): Si True, normaliza el contenido de AT en caso de que haya 'N's en la secuencia.
+        
 
     Returns:
-        float: El porcentaje de contenido de AT en la secuencia.
-
-    Raises:
-        ValueError: Si la secuencia está vacía o contiene caracteres no válidos.
+        vector: El codon y la cantidad de veces que se encontró dentro de la secuencia.
     """
     codon_freq = {}
     for i in range(0, len(dna_sequence), 3):
