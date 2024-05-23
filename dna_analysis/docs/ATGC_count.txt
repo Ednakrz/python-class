@@ -59,8 +59,8 @@ Caso de uso:
          | suma la canti  |
          | dade de veces  |
          | que encuentra   |
-	 |una letra,la alma|
-	 |cena y la imprime|
+	    |una letra,la alma|
+	    |cena y la imprime|
          +-----------------+
 Actor: Usuario
 
