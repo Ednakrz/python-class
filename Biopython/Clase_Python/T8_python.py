@@ -37,15 +37,19 @@ import re
 from Bio import SeqIO
 from Bio.Seq import Seq
  
-
+#Para cada marco de lectura del archivo
 for record in SeqIO.parse("seq.nt.fa", "fasta"):
     seq_id = record.id
+    #Se crea un archivo de salida para cada marco de lectura del archivo 
     output_filename = f"frame_{seq_id}.txt"
     with open(output_filename, "w") as output_file: 
         output_file.write("ID: " + record.id + "\n")
         seq = record.seq
+        #Se obtiene con el patron de 3 de 3 caracteres los codones de cada marco de lectura
         codon = re.findall(r"(.{3})", str(seq))
+        #Se unen en una solacadena separados por un espacio
         codon_str = ' '.join(codon)
+        #Se introduce la información en el archivo de salida
         output_file.write("Codones: " + codon_str + "\n")
         output_file.write("Secuencia: " + str(record.seq) + "\n")
         output_file.write("Longitud de la secuencia: " + str(len(record.seq)) + "\n")
